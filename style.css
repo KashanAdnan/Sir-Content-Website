@@ -586,11 +586,12 @@ footer img {
     }
 
     .services button {
-        top: 2930px;
+        top: 2659px;
         bottom: 30px;
         position: absolute;
         width: 300px;
         font-size: 15px;
+        height: 40px;
     }
 
     .services .heading h1 {
@@ -651,7 +652,7 @@ footer img {
     }
 
     footer {
-        height: 210vh;
+        height: 220vh;
         position: relative;
     }
 
@@ -686,7 +687,7 @@ footer img {
         margin-left: 20px;
         position: absolute;
         right: 0;
-        top: 1190px;
+        top: 970px;
     }
 
     .top .big-list {
@@ -698,7 +699,7 @@ footer img {
         width: 150px;
         position: absolute;
         right: 0;
-        top: 978px;
+        top: 764px;
     }
 
     .left h1 {
