@@ -490,24 +490,65 @@ footer img {
     }
 
     .menu {
-        display: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         flex-direction: column;
-        align-items: flex-start;
-        width: 300px;
+        max-width: 0 !important;
+        pointer-events: none;
+        height: 200vh;
+        position: fixed;
+        z-index: 1000;
+        right: -60px;
+        color: #fff;
+        padding: 10px 30px;
+        background-color: #d31228;
+        transition: 0.5s;
+    }
+
+    .menu.active {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 200px !important;
+        pointer-events: none;
         height: 200vh;
         position: fixed;
         z-index: 1000;
         right: 0;
-        color: #000;
+        color: #fff;
+        padding: 10px 30px;
+        background-color: #d31228;
+        transition: 0.5s;
+    }
+
+    .fa-bars {
+        display: block;
+        position: fixed;
+        right: 20px;
+        top: 10px;
+        font-size: 30px;
+    }
+
+    .menu .nav_links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 450px;
+        width: 100%;
+    }
+
+    .nav_links a {
+        color: #fff;
+        line-height: 30px;
     }
 
     .icons i {
         font-size: 40px;
     }
 
-    .fa-xmark {
-        display: none;
-    }
 
     .main_home {
         width: 100%;
@@ -516,10 +557,22 @@ footer img {
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
+        margin-top: 40px;
     }
 
     .main_home img {
         width: 350px !important;
+        margin-top: 40px;
+    }
+
+    .cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 85%;
+        height: 90%;
+        margin-left: 25px;
     }
 
     .main_home::after {
@@ -533,7 +586,8 @@ footer img {
     .main_home img {
         width: 300px;
     }
-    .main_content{
+
+    .main_content {
         margin-top: 70px;
     }
 
@@ -562,6 +616,10 @@ footer img {
 
     .aboutus {
         height: 100vh;
+    }
+
+    .about-content {
+        padding: 10px 30px;
     }
 
     .aboutus p {
@@ -643,13 +701,52 @@ footer img {
         width: 332px;
     }
 
+    .contact form {
+        margin-left: 30px;
+    }
 
     .contact {
         height: 175vh;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-top: 80px;
     }
 
     form .input label {
         font-size: 17px;
+    }
+
+    .contact_heading {
+        color: rgb(0, 0, 80);
+        margin-left: 32px;
+    }
+
+    .contact button {
+        padding: 10px 30px;
+        background-color: #d31228;
+        box-shadow: 0 0 10px rgba(255, 70, 70, 0.582);
+        color: #fff;
+        font-weight: 700;
+        border-radius: 30px;
+        border: none;
+        margin-top: 20px;
+        width: 200px;
+        margin-left: 39px;
+    }
+
+    .booth {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: -64px;
+        width: 100%;
+        height: 600px;
+        margin-top: 181px;
+    }
+
+    .l-card {
+        margin-bottom: 40px;
     }
 
     textarea {
@@ -680,14 +777,17 @@ footer img {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 80px;
         width: 100%;
+        margin-bottom: -150px;
     }
 
     footer .top {
         display: flex;
-        align-items: center;
-        justify-content: center;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-top: 30px;
+        padding: 10px;
+        margin-bottom: 150px;
     }
 
     .right {
@@ -723,11 +823,21 @@ footer img {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 120px !important; 
+        height: 120px !important;
         padding: 20px 50px;
     }
 
     .footer-bottom p {
         font-size: 19px;
+    }
+
+    .about {
+        width: 100% !important;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffffd3;
     }
 }

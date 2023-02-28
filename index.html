@@ -17,7 +17,7 @@
 <body>
     <nav>
         <img src="./images/logo.png" class="logo" alt="logo">
-        <div class="menu">
+        <div class="menu" id="menu">
             <ul class="nav_links">
                 <li><a href="#">home</a></li>
                 <li><a href="#">about us</a></li>
@@ -28,24 +28,24 @@
             <div class="search">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
         </div>
         <div class="icons">
-            <i class="fa-solid fa-bars"></i>
-            <i class="fa-solid fa-xmark"></i>
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
         </div>
     </nav>
- <div class="main_home">
-     <div class="main_content">
-         <h1>Content Writting <br /> Services Starting from <br /> Only <span>$9.95/page</span></h1>
-         <p>We are fastest growing digital agency that with strong <br />bussiness idea and ethic. Check
-             our Work with awesome <br /> customers</p>
-         <div class="buttons">
-             <button>Get a quote</button>
-             <button>LIVE CHAT</button>
-         </div>
-     </div>
-     <img src="./images/main.png" alt="">
- </div>
+    <div class="main_home">
+        <div class="main_content">
+            <h1>Content Writting <br /> Services Starting from <br /> Only <span>$9.95/page</span></h1>
+            <p>We are fastest growing digital agency that with strong <br />bussiness idea and ethic. Check
+                our Work with awesome <br /> customers</p>
+            <div class="buttons">
+                <button>Get a quote</button>
+                <button>LIVE CHAT</button>
+            </div>
+        </div>
+        <img src="./images/main.png" alt="">
+    </div>
     <div class="aboutus">
         <div class="about">
             <div class="about-content">
@@ -299,6 +299,13 @@
             <p>Copyright &copy; 2023</p>
         </div>
     </footer>
+
+    <script>
+        const openMenu = () => {
+            const menu = document.getElementById("menu")
+            menu.classList.toggle("active")
+        }
+    </script>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
